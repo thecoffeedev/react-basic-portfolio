@@ -1,0 +1,18 @@
+body{
+    background-color: #111216;
+    color:aliceblue;
+}
+
+.n-item{
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}
+
+.l-item{
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}
