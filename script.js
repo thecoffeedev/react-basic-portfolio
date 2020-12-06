@@ -125,9 +125,13 @@ let Desc = () => {
       <img
         src="https://i.pinimg.com/originals/7d/1a/3f/7d1a3f77eee9f34782c6f88e97a6c888.jpg"
         className="card-img-top"
-        alt="..." style={{height: "320px", width: "240px", borderRadius: '30px'}}
+        alt="..."
+        style={{ height: "320px", width: "240px", borderRadius: "30px" }}
       />
-      <p className="mt-4 text-center float-right" style={{display: "inline-block"}}>
+      <p
+        className="mt-4 text-center float-right"
+        style={{ display: "inline-block" }}
+      >
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quis quod
         nemo esse fugit. Animi blanditiis, quasi quod maxime illum distinctio,
         sit eligendi non, earum fuga dolorem saepe iusto nostrum veritatis!
@@ -152,6 +156,17 @@ let AboutColumn = () => {
   );
 };
 
+let Footer = () => {
+  return <p className="m-3">made with &#10084;</p>;
+};
+
+let FooterColumn = () => {
+  return (
+    <div className="col-12 text-center bg-dark mt-4">
+      <Footer />
+    </div>
+  );
+};
 
 let Row = () => {
   return (
@@ -160,6 +175,7 @@ let Row = () => {
       <ProjectCol />
       <SkillColumn />
       <AboutColumn />
+      <FooterColumn />
     </div>
   );
 };
