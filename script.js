@@ -119,16 +119,50 @@ let SkillColumn = () => {
   );
 };
 
+let Desc = () => {
+  return (
+    <div className="mt-4 text-center">
+      <img
+        src="https://i.pinimg.com/originals/7d/1a/3f/7d1a3f77eee9f34782c6f88e97a6c888.jpg"
+        className="card-img-top"
+        alt="..." style={{height: "320px", width: "240px", borderRadius: '30px'}}
+      />
+      <p className="mt-4 text-center float-right" style={{display: "inline-block"}}>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quis quod
+        nemo esse fugit. Animi blanditiis, quasi quod maxime illum distinctio,
+        sit eligendi non, earum fuga dolorem saepe iusto nostrum veritatis!
+        Ducimus voluptatem molestias nulla dolorem accusantium. Officiis vero,
+        ratione amet ipsa deserunt, distinctio asperiores rerum adipisci soluta
+        modi nihil! <br /> Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Nam quis quod nemo esse fugit. Animi blanditiis, quasi quod maxime
+        illum distinctio, sit eligendi non, earum fuga dolorem saepe iusto
+        nostrum veritatis! Ducimus voluptatem molestias nulla dolorem
+        accusantium.
+      </p>
+    </div>
+  );
+};
+
+let AboutColumn = () => {
+  return (
+    <div>
+      <h1>About Me</h1>
+      <Desc />
+    </div>
+  );
+};
+
+
 let Row = () => {
   return (
     <div className="row">
       <Col_12 />
       <ProjectCol />
       <SkillColumn />
+      <AboutColumn />
     </div>
   );
 };
-
 
 let app = <Row />;
 
